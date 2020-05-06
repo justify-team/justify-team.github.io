@@ -28,41 +28,86 @@ header {
   background-color: #F5F9FF !important;
   background: no-repeat center/100% url("../images/svg-gradient.svg");
   background-image: url("../images/svg-line.svg"), url("../images/svg-solid.svg"), url("../images/svg-gradient.svg"), url("../images/scg-rect-black.svg");
-  background-position: left 150px, left 150px, left 120px, 100% 80px;
+  background-position: -2vw 110px, center 110px, left 100px, left 60px;
   background-size: contain;
   background-repeat: no-repeat;
 }
 
 header > nav {
   background-color: #272727;
+  position: fixed !important;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 98;
 }
 
 header > nav > div.container {
-  padding: 16px 0 !important;
+  padding: 8px 0 !important;
 }
 
-nav ul.navbar-nav > li.nav-item {
-  margin-left: 32px;
+header > nav button#navbar-toggler {
+  border: none;
 }
+
+header > nav button#navbar-toggler:focus { outline: none; }
 
 header > div#hero-section {
-  margin-top: 120px;
+  padding-top: 160px;
+}
+
+header > div#hero-section > div.row > div {
+  padding-top: 64px;
 }
 
 header > div#hero-section p#hero-title {
   font-family: 'Roboto', sans-serif;
   font-weight: 700;
-  font-size: 2em;
+  font-size: 24px;
   letter-spacing: .5px;
-  line-height: 50px;
 }
 
 header > div#hero-section button {
   background-image: linear-gradient(to right, #4F98CA, #4DD08B);
+  border: none;
   border-radius: 8px;
-  padding: 10px 32px;
   color: white;
   font-family: 'Montserrat', sans-serif;
   font-weight: 600;
-  font-size: 18px;
+  font-size: 14px;
+}
+
+@media screen and  (min-width: 768px) {
+  header {
+    background-position: -4vw 140px, center 105px, left 110px, left 60px;
+    background-size: contain, cover, contain, contain;
+  }
+
+  header > div#hero-section > div.row > div {
+    padding-top: 0px;
+  }
+
+  header > div#hero-section p#hero-title {
+    font-size: 24px;
+  }
+
+  header > div#hero-section button {
+    padding: 8px 24px;
+    font-size: 16px;
+  }
+}
+
+@media screen and  (min-width: 1024px) {
+  header > div#hero-section > div.row > div:first-child {
+    margin-top: 240px;
+  }
+
+  header > div#hero-section p#hero-title {
+    font-size: 32px;
+  }
+
+  header > div#hero-section img {
+    width: 120%;
+    max-width: none;
+  }
 }
