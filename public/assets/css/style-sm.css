@@ -1,0 +1,13 @@
+@media screen and (min-width: 375px) {
+  /* Header Section */
+  header > div#hero-section button {
+    background-image: linear-gradient(to right, #4F98CA, #4DD08B);
+    border: none;
+    border-radius: 8px;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 14px;
+  }
+  /* End of Header Section */
+}

@@ -1,0 +1,93 @@
+body {
+  background-color: #F5F9FF;
+}
+
+/* Spinner Loading */
+div#loading {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #F5F9FF;
+  z-index: 99;
+}
+
+div#loading > div.spinner-wrapper {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+div#loading > div.spinner-wrapper > div.spinner-grow {
+  width: 3rem;
+  height: 3rem;
+}
+/* End of Spinner Loading */
+
+/* Header Section */
+header {
+  background-color: #F5F9FF !important;
+  background: no-repeat center/100% url("../images/svg-gradient.svg");
+  background-image: url("../images/svg-line.svg"), url("../images/svg-solid.svg"), url("../images/svg-gradient.svg"), url("../images/scg-rect-black.svg");
+  background-position: -2vw 110px, center 110px, left 100px, left 60px;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+header > nav {
+  background-color: #272727;
+  position: fixed !important;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 98;
+}
+
+header > nav button#navbar-toggler {
+  border: none;
+}
+
+header > nav button#navbar-toggler:focus { outline: none; }
+
+header > nav ul.navbar-nav a {
+  font: 400 16px 'Roboto', sans-serif;
+}
+
+header > div#hero-section {
+  padding-top: 150px;
+}
+
+header > div#hero-section > div.row > div {
+  padding-top: 48px;
+}
+
+header > div#hero-section > div.row > div:first-child {
+  text-align: center;
+}
+
+header > div#hero-section p#hero-title {
+  font: 700 24px 'Roboto', sans-serif;
+  color: #353855;
+  letter-spacing: .5px;
+}
+
+header > div#hero-section button {
+  background-image: linear-gradient(to right, #4F98CA, #4DD08B);
+  border: none;
+  border-radius: 8px;
+  color: white;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  font-size: 14px;
+}
+/* End of Header Section */
+
+@media screen and (max-width: 374px) {
+  /* Header Section */
+  header > div#hero-section p#hero-title {
+    font-size: 22px;
+  }
+  /* End of Header Section */
+}
