@@ -171,6 +171,37 @@ section#portfolio div#portfolio-nav a.active {
   padding-bottom: 4px;
   border-bottom: 2px solid #4dc19b;
 }
+
+section#portfolio div.portfolio-item .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(39, 39, 39, 0.8);
+  overflow: hidden;
+  height: 0;
+  margin: 0px 15px;
+  /* opacity: 0.8; */
+  color: white;
+  text-align: center;
+  transition: 0.5s ease;
+}
+
+section#portfolio div.portfolio-item:hover .overlay {
+  height: 100%;
+}
+
+section#portfolio div.portfolio-item .overlay .overlay-content {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  transform: translate(0%, -50%);
+}
+
+section#portfolio div.portfolio-item .overlay .overlay-content button {
+  font-size: 10px !important;
+}
 /* End of Portfolio Section */
 
 @media screen and (max-width: 374px) {

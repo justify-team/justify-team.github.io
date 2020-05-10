@@ -176,42 +176,104 @@
         </div>
       </section>
 
-      <section id="portfolio" class="bg-j-white">
+      <section id="portfolio" class="bg-j-white text-center">
         <div class="container">
-          <h1 class="text-center">Portfolio</h1>
+          <h1>Portfolio</h1>
           <div id="portfolio-nav" class="mt-4 mb-2">
-            <a href="" class="active">All</a>
-            <a href="">Website</a>
-            <a href="">Mobile App</a>
+            <a href="" data-filter="all" class="active">All</a>
+            <a href="" data-filter="web">Website</a>
+            <a href="" data-filter="mobile">Mobile App</a>
           </div>
           <div class="row">
-            <div class="col-12 col-sm-6 col-md-4 col-lg-3 mt-4">
+            <div
+              class="col-12 col-sm-6 col-lg-4 mt-4 portfolio-item"
+              data-cat="web"
+            >
               <img
                 src="https://www.warungbelajar.com/wp-content/uploads/2018/07/Screenshot_14.png"
                 alt=""
                 class="img-fluid"
               />
+              <div class="overlay">
+                <div class="overlay-content">
+                  <h6>Sistem Informasi Rumah Sakit</h6>
+                  <button class="btn btn-custom bg-j-gradient">
+                    Lihat Detail
+                  </button>
+                </div>
+              </div>
             </div>
-            <div class="col-12 col-sm-6 col-md-4 col-lg-3 mt-4">
+            <div
+              class="col-12 col-sm-6 col-lg-4 mt-4 portfolio-item"
+              data-cat="web"
+            >
               <img
                 src="https://www.warungbelajar.com/wp-content/uploads/2018/07/Screenshot_14.png"
                 alt=""
                 class="img-fluid"
               />
+              <div class="overlay">
+                <div class="overlay-content">
+                  <h6>Aplikasi Tagih Hutang</h6>
+                  <button class="btn btn-custom bg-j-gradient">
+                    Lihat Detail
+                  </button>
+                </div>
+              </div>
             </div>
-            <div class="col-12 col-sm-6 col-md-4 col-lg-3 mt-4">
+            <div
+              class="col-12 col-sm-6 col-lg-4 mt-4 portfolio-item"
+              data-cat="mobile"
+            >
               <img
                 src="https://www.warungbelajar.com/wp-content/uploads/2018/07/Screenshot_14.png"
                 alt=""
                 class="img-fluid"
               />
+              <div class="overlay">
+                <div class="overlay-content">
+                  <h6>Tanya Guide</h6>
+                  <button class="btn btn-custom bg-j-gradient">
+                    Lihat Detail
+                  </button>
+                </div>
+              </div>
             </div>
-            <div class="col-12 col-sm-6 col-md-4 col-lg-3 mt-4">
+            <div
+              class="col-12 col-sm-6 col-lg-4 mt-4 portfolio-item"
+              data-cat="web"
+            >
               <img
                 src="https://www.warungbelajar.com/wp-content/uploads/2018/07/Screenshot_14.png"
                 alt=""
                 class="img-fluid"
               />
+              <div class="overlay">
+                <div class="overlay-content">
+                  <h6>JadiKoder</h6>
+                  <button class="btn btn-custom bg-j-gradient">
+                    Lihat Detail
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div
+              class="col-12 col-sm-6 col-lg-4 mt-4 portfolio-item"
+              data-cat="mobile"
+            >
+              <img
+                src="https://www.warungbelajar.com/wp-content/uploads/2018/07/Screenshot_14.png"
+                alt=""
+                class="img-fluid"
+              />
+              <div class="overlay">
+                <div class="overlay-content">
+                  <h6>KAWALCOVID19</h6>
+                  <button class="btn btn-custom bg-j-gradient">
+                    Lihat Detail
+                  </button>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -254,6 +316,23 @@
               },
               200
             );
+          }
+        });
+
+        $("div#portfolio-nav a").on("click", function (e) {
+          e.preventDefault();
+          $("div#portfolio-nav a").removeClass("active");
+          $(this).addClass("active");
+          let filterCat = $(this).data("filter");
+          if (filterCat === "all") {
+            $(".portfolio-item").show();
+          } else {
+            $(".portfolio-item")
+              .hide()
+              .filter(function () {
+                return $(this).data("cat") === filterCat;
+              })
+              .show();
           }
         });
       });
