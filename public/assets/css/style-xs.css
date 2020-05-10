@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background-color: #f5f9ff;
 }
@@ -26,12 +30,20 @@ button.btn-custom {
   margin-top: 0.5rem;
 }
 
+section {
+  padding: 64px 0px;
+}
+
 .bg-j-gradient {
   background-image: linear-gradient(to right, #4f98ca, #4dd08b);
 }
 
 .bg-j-blue {
   background-color: #4f98ca;
+}
+
+.bg-j-white {
+  background-color: #f5f9ff;
 }
 
 .text-j-white {
@@ -134,14 +146,32 @@ section#about div#info-client div.row b {
 /* End of About Section */
 
 /* Service Section */
-/* section#services div.row {
+section#services div.row {
   margin-bottom: 48px;
-} */
+}
 
 section#services div.row > div.col-12 {
-  margin: 48px 0px;
+  margin-top: 48px;
 }
 /* End of Service Section */
+
+/* Portfolio Section */
+section#portfolio div#portfolio-nav a {
+  font: 400 16px "Roboto", sans-serif;
+  color: #353855;
+  text-decoration: none;
+  margin-left: 24px;
+}
+
+section#portfolio div#portfolio-nav a:first-child {
+  margin-left: 0px;
+}
+
+section#portfolio div#portfolio-nav a.active {
+  padding-bottom: 4px;
+  border-bottom: 2px solid #4dc19b;
+}
+/* End of Portfolio Section */
 
 @media screen and (max-width: 374px) {
 }

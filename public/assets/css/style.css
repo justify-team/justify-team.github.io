@@ -2,7 +2,7 @@
   /* Header Section */
   header {
     background-position: -4vw 110px, center 70px, left 95px, center 45px;
-    background-size: cover;
+    background-size: contain, cover, contain, cover;
   }
 
   header > div#hero-section > div.row > div {
