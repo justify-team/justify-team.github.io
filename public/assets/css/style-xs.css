@@ -1,5 +1,28 @@
 body {
-  background-color: #F5F9FF;
+  background-color: #f5f9ff;
+}
+
+h1,
+p {
+  font: 700 2.5rem "Roboto", sans-serif;
+  color: #353855;
+}
+
+p {
+  font-weight: normal;
+  font-size: 1rem;
+}
+
+p.lh-30 {
+  line-height: 30px;
+}
+
+button.custom {
+  background-image: linear-gradient(to right, #4f98ca, #4dd08b);
+  border: none !important;
+  border-radius: 8px !important;
+  color: white !important;
+  font: 600 16px "Montserrat", sans-serif !important;
 }
 
 /* Spinner Loading */
@@ -9,7 +32,7 @@ div#loading {
   bottom: 0;
   left: 0;
   right: 0;
-  background-color: #F5F9FF;
+  background-color: #f5f9ff;
   z-index: 99;
 }
 
@@ -28,10 +51,12 @@ div#loading > div.spinner-wrapper > div.spinner-grow {
 
 /* Header Section */
 header {
-  background-color: #F5F9FF !important;
+  background-color: #f5f9ff !important;
   background: no-repeat center/100% url("../images/svg-gradient.svg");
-  background-image: url("../images/svg-line.svg"), url("../images/svg-solid.svg"), url("../images/svg-gradient.svg"), url("../images/scg-rect-black.svg");
-  background-position: -2vw 110px, center 110px, left 100px, left 60px;
+  background-image: url("../images/svg-line.svg"),
+    url("../images/svg-solid.svg"), url("../images/svg-gradient.svg"),
+    url("../images/scg-rect-black.svg");
+  background-position: -2vw 110px, center 110px, -4px 100px, left 60px;
   background-size: contain;
   background-repeat: no-repeat;
 }
@@ -49,10 +74,12 @@ header > nav button#navbar-toggler {
   border: none;
 }
 
-header > nav button#navbar-toggler:focus { outline: none; }
+header > nav button#navbar-toggler:focus {
+  outline: none;
+}
 
 header > nav ul.navbar-nav a {
-  font: 400 16px 'Roboto', sans-serif;
+  font: 400 16px "Roboto", sans-serif;
 }
 
 header > div#hero-section {
@@ -67,27 +94,23 @@ header > div#hero-section > div.row > div:first-child {
   text-align: center;
 }
 
-header > div#hero-section p#hero-title {
-  font: 700 24px 'Roboto', sans-serif;
+header > div#hero-section h4#hero-title {
+  font: 700 22px "Roboto", sans-serif;
   color: #353855;
-  letter-spacing: .5px;
-}
-
-header > div#hero-section button {
-  background-image: linear-gradient(to right, #4F98CA, #4DD08B);
-  border: none;
-  border-radius: 8px;
-  color: white;
-  font-family: 'Montserrat', sans-serif;
-  font-weight: 600;
-  font-size: 14px;
+  letter-spacing: 0.5px;
 }
 /* End of Header Section */
 
+/* About Section */
+section#about {
+  padding: 60px 0;
+  text-align: center;
+}
+
+section#about div#info-client div.row b {
+  font-size: 2rem;
+}
+/* End of About Section */
+
 @media screen and (max-width: 374px) {
-  /* Header Section */
-  header > div#hero-section p#hero-title {
-    font-size: 22px;
-  }
-  /* End of Header Section */
 }

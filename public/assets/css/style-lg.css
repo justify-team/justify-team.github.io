@@ -1,12 +1,12 @@
-@media screen and  (min-width: 1200px) {
+@media screen and (min-width: 1200px) {
   /* Header Section */
   header > div#hero-section > div.row > div:first-child {
     margin-top: 240px;
     text-align: left;
   }
 
-  header > div#hero-section p#hero-title {
-    font-size: 32px;
+  header > div#hero-section h4#hero-title {
+    font-size: 40px;
   }
   /* End of Header Section */
 }
