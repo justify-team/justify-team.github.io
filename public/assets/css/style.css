@@ -24,6 +24,12 @@
   }
   /* End of Header Section */
 
+  /* Service Section */
+  section#services div.row > div.col-12:first-child {
+    border-right: 2px solid rgba(255, 255, 255, 0.4);
+  }
+  /* End of Service Section */
+
   /* About Section */
   section#about div#info-client > div.col-md-4:first-child {
     border-right: 1px solid rgba(39, 39, 39, 0.5);

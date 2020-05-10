@@ -31,7 +31,7 @@ button.btn-custom {
 }
 
 section {
-  padding: 64px 0px;
+  padding: 48px 0px;
 }
 
 .bg-j-gradient {
@@ -131,11 +131,6 @@ header > div#hero-section h4#hero-title {
 /* End of Header Section */
 
 /* About Section */
-section#about {
-  padding: 60px 0;
-  text-align: center;
-}
-
 section h1 {
   font-size: 32px;
 }
@@ -168,8 +163,12 @@ section#portfolio div#portfolio-nav a:first-child {
 }
 
 section#portfolio div#portfolio-nav a.active {
-  padding-bottom: 4px;
-  border-bottom: 2px solid #4dc19b;
+  /* padding-bottom: 4px;
+  border-bottom: 2px solid #4dc19b; */
+  background-color: #4dc19b;
+  color: white;
+  padding: 4px 16px;
+  border-radius: 4px;
 }
 
 section#portfolio div.portfolio-item .overlay {

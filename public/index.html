@@ -102,7 +102,7 @@
     </header>
 
     <main>
-      <section id="about" class="py-5">
+      <section id="about" class="text-center">
         <div class="container">
           <h1 class="mb-4">About Us</h1>
           <p class="col col-lg-10 mx-auto lh-30">
@@ -151,7 +151,7 @@
         <div class="container">
           <h1 class="text-j-white">Our Services</h1>
           <div class="row">
-            <div class="col-12 col-md-6 col-lg-5 ml-auto border-right">
+            <div class="col-12 col-md-6 col-lg-5 ml-auto">
               <img
                 src="assets/images/website.svg"
                 alt="Website Icon"
@@ -180,9 +180,9 @@
         <div class="container">
           <h1>Portfolio</h1>
           <div id="portfolio-nav" class="mt-4 mb-2">
-            <a href="" data-filter="all" class="active">All</a>
-            <a href="" data-filter="web">Website</a>
-            <a href="" data-filter="mobile">Mobile App</a>
+            <a href="#" role="button" data-filter="all" class="active">All</a>
+            <a href="#" role="button" data-filter="web">Website</a>
+            <a href="#" role="button" data-filter="mobile">Mobile App</a>
           </div>
           <div class="row">
             <div
@@ -302,14 +302,19 @@
       $(document).ready(function () {
         $("div#loading").fadeOut(500);
 
-        $("html body").on("scroll", function (e) {
-          console.log(e);
-        });
+        let windowHash = window.location.hash;
+        if (windowHash !== "") {
+          $("html, body").animate(
+            {
+              scrollTop: $(windowHash).offset().top - 52,
+            },
+            200
+          );
+        }
 
         $("nav ul.navbar-nav a.nav-link").on("click", function (e) {
           $("div.navbar-collapse").removeClass("show");
           if (this.hash !== "") {
-            console.log($(this.hash));
             $("html, body").animate(
               {
                 scrollTop: $(this.hash).offset().top - 66,
@@ -323,16 +328,18 @@
           e.preventDefault();
           $("div#portfolio-nav a").removeClass("active");
           $(this).addClass("active");
+
           let filterCat = $(this).data("filter");
           if (filterCat === "all") {
-            $(".portfolio-item").show();
+            $(".portfolio-item").fadeIn(1200).show();
           } else {
             $(".portfolio-item")
               .hide()
+              .fadeOut(1200)
               .filter(function () {
                 return $(this).data("cat") === filterCat;
               })
-              .show();
+              .fadeIn(1200);
           }
         });
       });
