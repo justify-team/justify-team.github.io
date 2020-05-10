@@ -2,7 +2,7 @@
   /* Header Section */
   header {
     background-position: -4vw 110px, center 70px, left 95px, center 45px;
-    background-size: contain, cover, contain, cover;
+    background-size: cover;
   }
 
   header > div#hero-section > div.row > div {
@@ -42,10 +42,22 @@
     line-height: 48px;
   }
   /* End of About Section */
+
+  /* Service Section */
+  /* section#services div.row > div.col-12:first-child::after {
+    content: "";
+    height: 90px;
+    border-right: 1px solid white;
+  } */
+  /* End of Service Section */
 }
 
 @media screen and (min-width: 1024px) {
   /* Header Section */
+  header {
+    background-position: -4vw 115px, center 70px, left 95px, center 45px;
+  }
+
   header > div#hero-section > div.row > div:first-child {
     margin-top: 160px;
     text-align: left;

@@ -1,5 +1,10 @@
 @media screen and (min-width: 1200px) {
   /* Header Section */
+  header {
+    background-position: -4vw 125px, center 95px, left 95px, center 45px;
+    background-size: contain, cover, cover, cover;
+  }
+
   header > div#hero-section > div.row > div:first-child {
     margin-top: 240px;
     text-align: left;
