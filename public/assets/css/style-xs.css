@@ -21,7 +21,7 @@ p.lh-30 {
   line-height: 30px;
 }
 
-button.btn-custom {
+.btn-custom {
   border: none !important;
   border-radius: 8px !important;
   color: white;
@@ -151,6 +151,10 @@ section#services div.row > div.col-12 {
 /* End of Service Section */
 
 /* Portfolio Section */
+section#portfolio {
+  overflow: hidden;
+}
+
 section#portfolio div#portfolio-nav a {
   font: 400 16px "Roboto", sans-serif;
   color: #353855;
@@ -163,12 +167,32 @@ section#portfolio div#portfolio-nav a:first-child {
 }
 
 section#portfolio div#portfolio-nav a.active {
-  /* padding-bottom: 4px;
-  border-bottom: 2px solid #4dc19b; */
   background-color: #4dc19b;
   color: white;
   padding: 4px 16px;
   border-radius: 4px;
+}
+
+section#portfolio div.portfolio-item {
+  transition: 0.2s ease;
+  max-width: 100%;
+  max-height: 100%;
+  overflow: hidden;
+}
+
+section#portfolio div.portfolio-item:hover {
+  transform: scale(1.15);
+}
+
+section#portfolio div.portfolio-item div.portfolio-image {
+  overflow: hidden;
+  border-radius: 16px;
+}
+
+section#portfolio div.portfolio-item div.portfolio-image img {
+  width: 100%;
+  height: 240px;
+  object-fit: cover;
 }
 
 section#portfolio div.portfolio-item .overlay {
@@ -178,16 +202,17 @@ section#portfolio div.portfolio-item .overlay {
   right: 0;
   background-color: rgba(39, 39, 39, 0.8);
   overflow: hidden;
-  height: 0;
+  height: 0%;
   margin: 0px 15px;
-  /* opacity: 0.8; */
   color: white;
   text-align: center;
   transition: 0.5s ease;
+  border-radius: 16px;
 }
 
 section#portfolio div.portfolio-item:hover .overlay {
   height: 100%;
+  /* opacity: 1; */
 }
 
 section#portfolio div.portfolio-item .overlay .overlay-content {
@@ -198,10 +223,47 @@ section#portfolio div.portfolio-item .overlay .overlay-content {
   transform: translate(0%, -50%);
 }
 
-section#portfolio div.portfolio-item .overlay .overlay-content button {
+section#portfolio div.portfolio-item .overlay .overlay-content .btn-custom {
   font-size: 10px !important;
+  border-radius: 4px !important;
 }
 /* End of Portfolio Section */
+
+/* Contact Section */
+section#contact div.row > div {
+  margin-top: 48px;
+}
+
+section#contact form label {
+  font: 400 18px "Roboto", sans-serif;
+}
+
+section#contact form input,
+section#contact form textarea {
+  border-radius: 8px;
+}
+
+section#contact div#map iframe {
+  height: 360px;
+  border-radius: 8px;
+}
+/* End of Contact Section */
+
+/* Footer Section */
+footer div#main-footer {
+  background-color: #272727;
+  padding: 84px 0;
+}
+
+footer div#main-footer div#navigation-menu p,
+footer div#main-footer div#navigation-menu p a {
+  color: white;
+}
+
+footer div#main-footer div#navigation-menu p a {
+  font-weight: 300;
+}
+/* End of Footer Section */
 
 @media screen and (max-width: 374px) {
 }
