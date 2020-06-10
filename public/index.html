@@ -1,390 +1,526 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta name="theme-color" content="#272727" />
+    <meta
+      name="description"
+      content="Justify merupakan sebuah startup penyedia jasa pembuatan aplikasi (software house) berbasis web dan mobile."
+    />
 
-<head>
-  <!-- Required meta tags -->
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-  <meta name="theme-color" content="#272727" />
-  <meta name="description"
-    content="Justify merupakan sebuah startup penyedia jasa pembuatan aplikasi (software house) berbasis web dan mobile." />
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="assets/css/materialicons.css" />
+    <link rel="stylesheet" href="assets/css/style-xs.css" />
+    <link rel="stylesheet" href="assets/css/style-sm.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/style-lg.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"
+    />
 
-  <!-- Bootstrap CSS -->
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet" />
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
-    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous" />
-  <link rel="stylesheet" href="assets/css/materialicons.css" />
-  <link rel="stylesheet" href="assets/css/style-xs.css" />
-  <link rel="stylesheet" href="assets/css/style-sm.css" />
-  <link rel="stylesheet" href="assets/css/style.css" />
-  <link rel="stylesheet" href="assets/css/style-lg.css" />
+    <script type="text/javascript">
+      window.$crisp = [];
+      window.CRISP_WEBSITE_ID = "c48eb51e-286f-453a-b27a-376981a80873";
+      (function () {
+        d = document;
+        s = d.createElement("script");
+        s.src = "https://client.crisp.chat/l.js";
+        s.async = 1;
+        d.getElementsByTagName("head")[0].appendChild(s);
+      })();
+    </script>
 
-  <script type="text/javascript">
-    window.$crisp = [];
-    window.CRISP_WEBSITE_ID = "c48eb51e-286f-453a-b27a-376981a80873";
-    (function () {
-      d = document;
-      s = d.createElement("script");
-      s.src = "https://client.crisp.chat/l.js";
-      s.async = 1;
-      d.getElementsByTagName("head")[0].appendChild(s);
-    })();
-  </script>
+    <title>Justify</title>
+  </head>
 
-  <title>Justify</title>
-</head>
-
-<body>
-  <div id="loading">
-    <div class="spinner-wrapper">
-      <div class="spinner-border text-info" role="status">
-        <span class="sr-only">Loading...</span>
-      </div>
-    </div>
-  </div>
-
-  <header class="pb-4">
-    <nav class="navbar navbar-expand-lg navbar-dark">
-      <div class="container">
-        <a class="navbar-brand" href="">
-          <img src="assets/images/logo@2x.png" alt="Logo Justify" height="40" />
-        </a>
-        <button class="navbar-toggler pr-0" id="navbar-toggler" type="button" data-toggle="collapse"
-          data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav ml-auto">
-            <li class="nav-item active ml-lg-4">
-              <a class="nav-link" href="#about">About</a>
-            </li>
-            <li class="nav-item active ml-lg-4">
-              <a class="nav-link" href="#services">Services</a>
-            </li>
-            <li class="nav-item active ml-lg-4">
-              <a class="nav-link" href="#portfolio">Portfolio</a>
-            </li>
-            <li class="nav-item active ml-lg-4">
-              <a class="nav-link" href="#contact">Contact</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </nav>
-    <div id="hero-section" class="container">
-      <div class="row">
-        <div class="col-12 col-md-6">
-          <h4 id="hero-title">
-            Tuangkan Ide Bisnis Anda<br />menjadi sebuah Aplikasi<br />bersama
-            Kami
-          </h4>
-          <a href="#contact" class="btn btn-custom bg-j-gradient">Contact us</a>
-        </div>
-        <div id="hero-image" class="col-12 col-md-6">
-          <img src="assets/images/hero-image.png" class="img-fluid" alt="Hero Image" />
+  <body>
+    <div id="loading">
+      <div class="spinner-wrapper">
+        <div class="spinner-border text-info" role="status">
+          <span class="sr-only">Loading...</span>
         </div>
       </div>
     </div>
-  </header>
 
-  <main>
-    <section id="about" class="text-center">
-      <div class="container">
-        <h1 class="mb-4">About Us</h1>
-        <p class="col col-lg-10 mx-auto lh-30">
-          Justify merupakan sebuah startup yang bergerak dibidang jasa
-          khususnya pembuatan aplikasi atau yang dikenal dengan software
-          house. justify miripikam sibiah pirisiihian ying birgirak dibiding
-          jisi khisisnya pimbiitin iplikisi
-        </p>
-        <a href="#services" class="btn btn-custom bg-j-gradient">Read More</a>
-        <div class="row mt-5" id="info-client">
-          <div class="col-6 col-md-4">
-            <div class="row">
-              <div class="col-12 col-md-6 text-md-right">
-                <b>7</b>
-              </div>
-              <div class="col-12 col-md-6 text-md-left">
-                <span>Clients</span>
-              </div>
-            </div>
-          </div>
-          <div class="col-6 col-md-4">
-            <div class="row">
-              <div class="col-12 col-md-6 text-md-right">
-                <b>12</b>
-              </div>
-              <div class="col-12 col-md-6 text-md-left">
-                <span>Websites</span>
-              </div>
-            </div>
-          </div>
-          <div class="col-6 col-md-4 mx-auto">
-            <div class="row">
-              <div class="col-12 col-md-6 text-md-right">
-                <b>5</b>
-              </div>
-              <div class="col-12 col-md-6 text-md-left">
-                <span>Mobile Apps</span>
-              </div>
-            </div>
+    <header class="pb-4">
+      <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container animate__animated animate__fadeInDown">
+          <a class="navbar-brand" href="">
+            <img
+              src="assets/images/logo@2x.png"
+              alt="Logo Justify"
+              height="40"
+            />
+          </a>
+          <button
+            class="navbar-toggler pr-0"
+            id="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item active ml-lg-4">
+                <a class="nav-link" href="#about">About</a>
+              </li>
+              <li class="nav-item active ml-lg-4">
+                <a class="nav-link" href="#services">Services</a>
+              </li>
+              <li class="nav-item active ml-lg-4">
+                <a class="nav-link" href="#portfolio">Portfolio</a>
+              </li>
+              <li class="nav-item active ml-lg-4">
+                <a class="nav-link" href="#contact">Contact</a>
+              </li>
+            </ul>
           </div>
         </div>
-      </div>
-    </section>
-
-    <section id="services" class="bg-j-blue text-center">
-      <div class="container">
-        <h1 class="text-j-white">Our Services</h1>
+      </nav>
+      <div id="hero-section" class="container">
         <div class="row">
-          <div class="col-12 col-md-6 col-lg-5 ml-auto">
-            <img src="assets/images/website.svg" alt="Website Icon" class="img-fluid" width="90" />
-            <p class="mt-3 mb-0 text-white">Website</p>
+          <div class="col-12 col-md-6 animate__animated animate__fadeInLeft">
+            <h4 id="hero-title">
+              Tuangkan Ide Bisnis Anda<br />menjadi sebuah Aplikasi<br />bersama
+              Kami
+            </h4>
+            <a href="#contact" class="btn btn-custom bg-j-gradient"
+              >Contact us</a
+            >
           </div>
-          <div class="col-12 col-md-6 col-lg-5 mr-auto">
-            <img src="assets/images/mobile.svg" alt="Mobile App Icon" class="img-fluid" width="90" />
-            <p class="mt-3 mb-0 text-white">Mobile App</p>
-          </div>
-        </div>
-        <a class="btn btn-custom text-j-blue bg-white">
-          Contact us
-        </a>
-      </div>
-    </section>
-
-    <section id="portfolio" class="bg-j-white text-center">
-      <div class="container">
-        <h1>Portfolio</h1>
-        <div id="portfolio-nav" class="mt-4 mb-2">
-          <a href="#" role="button" data-filter="all" class="active">All</a>
-          <a href="#" role="button" data-filter="web">Website</a>
-          <a href="#" role="button" data-filter="mobile">Mobile App</a>
-        </div>
-        <div class="row">
-          <div class="col-12 col-sm-6 col-lg-4 mt-4 portfolio-item" data-cat="web">
-            <div class="portfolio-image">
-              <img src="https://www.warungbelajar.com/wp-content/uploads/2018/07/Screenshot_14.png" alt=""
-                class="img-fluid" />
-            </div>
-            <div class="overlay">
-              <div class="overlay-content">
-                <h6>Sistem Informasi Rumah Sakit</h6>
-                <button class="btn btn-custom bg-j-gradient">
-                  Lihat Detail
-                </button>
-              </div>
-            </div>
-          </div>
-          <div class="col-12 col-sm-6 col-lg-4 mt-4 portfolio-item" data-cat="web">
-            <div class="portfolio-image">
-              <img
-                src="https://images.unsplash.com/photo-1530435460869-d13625c69bbf?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1500&q=80"
-                alt="" class="img-fluid" />
-            </div>
-            <div class="overlay">
-              <div class="overlay-content">
-                <h6>Aplikasi Tagih Hutang</h6>
-                <button class="btn btn-custom bg-j-gradient">
-                  Lihat Detail
-                </button>
-              </div>
-            </div>
-          </div>
-          <div class="col-12 col-sm-6 col-lg-4 mt-4 portfolio-item" data-cat="mobile">
-            <div class="portfolio-image">
-              <img
-                src="https://images.unsplash.com/photo-1560461396-41fd0b4f711c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1402&q=80"
-                alt="" class="img-fluid" />
-            </div>
-            <div class="overlay">
-              <div class="overlay-content">
-                <h6>Tanya Guide</h6>
-                <button class="btn btn-custom bg-j-gradient">
-                  Lihat Detail
-                </button>
-              </div>
-            </div>
-          </div>
-          <div class="col-12 col-sm-6 col-lg-4 mt-4 portfolio-item" data-cat="web">
-            <div class="portfolio-image">
-              <img
-                src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1500&q=80"
-                alt="" class="img-fluid" />
-            </div>
-            <div class="overlay">
-              <div class="overlay-content">
-                <h6>JadiKoder</h6>
-                <button class="btn btn-custom bg-j-gradient">
-                  Lihat Detail
-                </button>
-              </div>
-            </div>
-          </div>
-          <div class="col-12 col-sm-6 col-lg-4 mt-4 portfolio-item" data-cat="mobile">
-            <div class="portfolio-image">
-              <img
-                src="https://images.unsplash.com/photo-1558655146-6c222b05fce4?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1400&q=80"
-                alt="" class="img-fluid" />
-            </div>
-            <div class="overlay">
-              <div class="overlay-content">
-                <h6>KAWALCOVID19</h6>
-                <button class="btn btn-custom bg-j-gradient">
-                  Lihat Detail
-                </button>
-              </div>
-            </div>
+          <div
+            id="hero-image"
+            class="col-12 col-md-6 animate__animated animate__fadeInRight"
+          >
+            <img
+              src="assets/images/hero-image.png"
+              class="img-fluid"
+              alt="Hero Image"
+            />
           </div>
         </div>
       </div>
-    </section>
+    </header>
 
-    <section id="contact" class="bg-j-blue">
-      <div class="container">
-        <h1 class="text-center text-j-white">Contact Us</h1>
-        <div class="row text-white">
-          <div class="col-12 col-md-6">
-            <div id="map">
-              <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3981.905418492038!2d98.69813721429318!3d3.6093638!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3031319cc2230e73%3A0x2760254d8f6c94ed!2sJl.%20Durung%20No.110%2C%20Sidorejo%2C%20Kec.%20Medan%20Tembung%2C%20Kota%20Medan%2C%20Sumatera%20Utara%2020222!5e0!3m2!1sid!2sid!4v1589129235407!5m2!1sid!2sid"
-                width="100%" height="100%" frameborder="0" allowfullscreen="" aria-hidden="false" tabindex="0"
-                title="Our Basecamp"></iframe>
-              <p class="text-white mt-3">
-                <i class="material-icons align-middle">place</i>
-                <span class="align-middle ml-2">Jl. in aja dulu, siapa tau cocok</span>
-              </p>
-              <p class="text-white">
-                <i class="material-icons align-middle">phone</i>
-                <span class="align-middle ml-2">+62 <i>81234567890</i></span>
-              </p>
-              <p class="text-white">
-                <i class="material-icons align-middle">email</i>
-                <span class="align-middle ml-2">tanya.justify@gmail.com</span>
-              </p>
+    <main>
+      <section id="about" class="text-center">
+        <div class="container">
+          <h1 class="mb-4 animate__animated animate__fadeInUp">About Us</h1>
+          <p class="col col-lg-10 mx-auto lh-30">
+            Justify merupakan sebuah startup yang bergerak dibidang jasa
+            khususnya pembuatan aplikasi atau yang dikenal dengan software
+            house. justify miripikam sibiah pirisiihian ying birgirak dibiding
+            jisi khisisnya pimbiitin iplikisi
+          </p>
+          <a href="#services" class="btn btn-custom bg-j-gradient">Read More</a>
+          <div class="row mt-5 animate__animated" id="info-client">
+            <div class="col-6 col-md-4">
+              <div class="row">
+                <div class="col-12 col-md-6 text-md-right">
+                  <b>7</b>
+                </div>
+                <div class="col-12 col-md-6 text-md-left">
+                  <span>Clients</span>
+                </div>
+              </div>
             </div>
-          </div>
-          <div class="col-12 col-md-6">
-            <form>
-              <div class="form-group">
-                <label for="name">Nama</label>
-                <input type="text" class="form-control" id="name" />
+            <div class="col-6 col-md-4">
+              <div class="row">
+                <div class="col-12 col-md-6 text-md-right">
+                  <b>12</b>
+                </div>
+                <div class="col-12 col-md-6 text-md-left">
+                  <span>Websites</span>
+                </div>
               </div>
-              <div class="form-group">
-                <label for="email">Email</label>
-                <input type="email" class="form-control" id="email" />
-              </div>
-              <div class="form-group">
-                <label for="message">Pesan</label>
-                <textarea class="form-control" rows="6" id="message"></textarea>
-              </div>
-              <a class="btn btn-custom text-j-blue bg-white px-4">
-                Kirim
-              </a>
-            </form>
-          </div>
-        </div>
-      </div>
-    </section>
-  </main>
-
-  <footer>
-    <div id="main-footer">
-      <div class="container">
-        <div class="row">
-          <div class="col-12 col-md-6">
-            <img src="assets/images/logo@2x.png" alt="Logo Justify" height="40" />
-            <div id="license" class="text-muted mt-5">
-              <i>
-                Our Service Icons made by
-                <a href="https://www.flaticon.com/authors/freepik" title="Freepik"
-                  class="text-muted text-underlined"><u>Freepik</u></a>
-                from
-                <a href="https://www.flaticon.com/" title="Flaticon"
-                  class="text-muted text-underlined"><u>www.flaticon.com</u></a>
-              </i>
             </div>
-          </div>
-          <div class="col-12 col-md-6 mt-4 mt-md-0" id="navigation-menu">
-            <div class="row">
-              <div class="col-12 col-md-6 mt-4 mt-md-0">
-                <p><b>Company</b></p>
-                <p><a href="#">About</a></p>
-                <p><a href="#">Contact</a></p>
-              </div>
-              <div class="col-12 col-md-6 mt-4 mt-md-0">
-                <p><b>Product & Services</b></p>
-                <p><a href="#">Portfolio</a></p>
-                <p><a href="#">Our Services</a></p>
+            <div class="col-6 col-md-4 mx-auto">
+              <div class="row">
+                <div class="col-12 col-md-6 text-md-right">
+                  <b>5</b>
+                </div>
+                <div class="col-12 col-md-6 text-md-left">
+                  <span>Mobile Apps</span>
+                </div>
               </div>
             </div>
           </div>
         </div>
+      </section>
+
+      <section id="services" class="bg-j-blue text-center">
+        <div class="container">
+          <h1 class="text-j-white">Our Services</h1>
+          <div class="row">
+            <div class="col-12 col-md-6 col-lg-5 ml-auto">
+              <img
+                src="assets/images/website.svg"
+                alt="Website Icon"
+                class="img-fluid"
+                width="90"
+              />
+              <p class="mt-3 mb-0 text-white">Website</p>
+            </div>
+            <div class="col-12 col-md-6 col-lg-5 mr-auto">
+              <img
+                src="assets/images/mobile.svg"
+                alt="Mobile App Icon"
+                class="img-fluid"
+                width="90"
+              />
+              <p class="mt-3 mb-0 text-white">Mobile App</p>
+            </div>
+          </div>
+          <a href="#contact" class="btn btn-custom text-j-blue bg-white">
+            Contact us
+          </a>
+        </div>
+      </section>
+
+      <section id="portfolio" class="bg-j-white text-center">
+        <div class="container">
+          <h1>Portfolio</h1>
+          <div id="portfolio-nav" class="mt-4 mb-2">
+            <a href="#" role="button" data-filter="all" class="active">All</a>
+            <a href="#" role="button" data-filter="web">Website</a>
+            <a href="#" role="button" data-filter="mobile">Mobile App</a>
+          </div>
+          <div class="row">
+            <div
+              class="col-12 col-sm-6 col-lg-4 mt-4 portfolio-item animate__animated"
+              data-cat="web"
+            >
+              <div class="portfolio-image">
+                <img
+                  src="https://www.warungbelajar.com/wp-content/uploads/2018/07/Screenshot_14.png"
+                  alt=""
+                  class="img-fluid"
+                />
+              </div>
+              <div class="overlay">
+                <div class="overlay-content">
+                  <h6>Sistem Informasi Rumah Sakit</h6>
+                  <button class="btn btn-custom bg-j-gradient">
+                    Lihat Detail
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div
+              class="col-12 col-sm-6 col-lg-4 mt-4 portfolio-item animate__animated"
+              data-cat="web"
+            >
+              <div class="portfolio-image">
+                <img
+                  src="https://images.unsplash.com/photo-1530435460869-d13625c69bbf?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1500&q=80"
+                  alt=""
+                  class="img-fluid"
+                />
+              </div>
+              <div class="overlay">
+                <div class="overlay-content">
+                  <h6>Aplikasi Tagih Hutang</h6>
+                  <button class="btn btn-custom bg-j-gradient">
+                    Lihat Detail
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div
+              class="col-12 col-sm-6 col-lg-4 mt-4 portfolio-item animate__animated"
+              data-cat="mobile"
+            >
+              <div class="portfolio-image">
+                <img
+                  src="https://images.unsplash.com/photo-1560461396-41fd0b4f711c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1402&q=80"
+                  alt=""
+                  class="img-fluid"
+                />
+              </div>
+              <div class="overlay">
+                <div class="overlay-content">
+                  <h6>Tanya Guide</h6>
+                  <button class="btn btn-custom bg-j-gradient">
+                    Lihat Detail
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div
+              class="col-12 col-sm-6 col-lg-4 mt-4 portfolio-item animate__animated"
+              data-cat="web"
+            >
+              <div class="portfolio-image">
+                <img
+                  src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1500&q=80"
+                  alt=""
+                  class="img-fluid"
+                />
+              </div>
+              <div class="overlay">
+                <div class="overlay-content">
+                  <h6>JadiKoder</h6>
+                  <button class="btn btn-custom bg-j-gradient">
+                    Lihat Detail
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div
+              class="col-12 col-sm-6 col-lg-4 mt-4 portfolio-item animate__animated"
+              data-cat="mobile"
+            >
+              <div class="portfolio-image">
+                <img
+                  src="https://images.unsplash.com/photo-1558655146-6c222b05fce4?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1400&q=80"
+                  alt=""
+                  class="img-fluid"
+                />
+              </div>
+              <div class="overlay">
+                <div class="overlay-content">
+                  <h6>KAWALCOVID19</h6>
+                  <button class="btn btn-custom bg-j-gradient">
+                    Lihat Detail
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" class="bg-j-blue">
+        <div class="container">
+          <h1 class="text-center text-j-white">Contact Us</h1>
+          <div class="row text-white">
+            <div class="col-12 col-md-6">
+              <div id="map">
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3981.905418492038!2d98.69813721429318!3d3.6093638!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3031319cc2230e73%3A0x2760254d8f6c94ed!2sJl.%20Durung%20No.110%2C%20Sidorejo%2C%20Kec.%20Medan%20Tembung%2C%20Kota%20Medan%2C%20Sumatera%20Utara%2020222!5e0!3m2!1sid!2sid!4v1589129235407!5m2!1sid!2sid"
+                  width="100%"
+                  height="100%"
+                  frameborder="0"
+                  allowfullscreen=""
+                  aria-hidden="false"
+                  tabindex="0"
+                  title="Our Basecamp"
+                ></iframe>
+                <p class="text-white mt-3">
+                  <i class="material-icons align-middle">place</i>
+                  <span class="align-middle ml-2"
+                    >Jl. in aja dulu, siapa tau cocok</span
+                  >
+                </p>
+                <p class="text-white">
+                  <i class="material-icons align-middle">phone</i>
+                  <span class="align-middle ml-2">+62 <i>81234567890</i></span>
+                </p>
+                <p class="text-white">
+                  <i class="material-icons align-middle">email</i>
+                  <span class="align-middle ml-2">tanya.justify@gmail.com</span>
+                </p>
+              </div>
+            </div>
+            <div class="col-12 col-md-6">
+              <form>
+                <div class="form-group">
+                  <label for="name">Nama</label>
+                  <input type="text" class="form-control" id="name" />
+                </div>
+                <div class="form-group">
+                  <label for="email">Email</label>
+                  <input type="email" class="form-control" id="email" />
+                </div>
+                <div class="form-group">
+                  <label for="message">Pesan</label>
+                  <textarea
+                    class="form-control"
+                    rows="6"
+                    id="message"
+                  ></textarea>
+                </div>
+                <a class="btn btn-custom text-j-blue bg-white px-4">
+                  Kirim
+                </a>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div id="main-footer">
+        <div class="container">
+          <div class="row">
+            <div class="col-12 col-md-6">
+              <img
+                src="assets/images/logo@2x.png"
+                alt="Logo Justify"
+                height="40"
+              />
+              <div id="license" class="text-muted mt-5">
+                <i>
+                  Our Service Icons made by
+                  <a
+                    href="https://www.flaticon.com/authors/freepik"
+                    title="Freepik"
+                    class="text-muted text-underlined"
+                    ><u>Freepik</u></a
+                  >
+                  from
+                  <a
+                    href="https://www.flaticon.com/"
+                    title="Flaticon"
+                    class="text-muted text-underlined"
+                    ><u>www.flaticon.com</u></a
+                  >
+                </i>
+              </div>
+            </div>
+            <div class="col-12 col-md-6 mt-4 mt-md-0" id="navigation-menu">
+              <div class="row">
+                <div class="col-12 col-md-6 mt-4 mt-md-0">
+                  <p><b>Company</b></p>
+                  <p><a href="#about">About</a></p>
+                  <p><a href="#contact">Contact</a></p>
+                </div>
+                <div class="col-12 col-md-6 mt-4 mt-md-0">
+                  <p><b>Product & Services</b></p>
+                  <p><a href="#portfolio">Portfolio</a></p>
+                  <p><a href="#services">Our Services</a></p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
-    </div>
-    <div id="copyright" class="text-center py-3" style="background-color: #202020;">
-      <i class="text-white m-0">
-        <span class="mr-2">&copy;</span>Copyright 2020 Designed & Developed by
-        Justify with &#10084;
-      </i>
-    </div>
-  </footer>
+      <div
+        id="copyright"
+        class="text-center py-3"
+        style="background-color: #202020;"
+      >
+        <i class="text-white m-0">
+          <span class="mr-2">&copy;</span>Copyright 2020 Designed & Developed by
+          Justify with &#10084;
+        </i>
+      </div>
+    </footer>
 
-  <!-- Optional JavaScript -->
-  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-  <script src="https://code.jquery.com/jquery-3.5.1.min.js"
-    integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
-  </script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
-    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
-  </script>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.min.js"
+      integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+      integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+      crossorigin="anonymous"
+    ></script>
 
-  <script>
-    $(document).ready(function () {
-      $("div#loading").fadeOut(500);
+    <script>
+      $(document).ready(function () {
+        $("div#loading").fadeOut(500);
 
-      let windowHash = window.location.hash;
-      if (windowHash !== "") {
-        $("html, body").animate({
-            scrollTop: $(windowHash).offset().top - 52,
-          },
-          200
-        );
-      }
-
-      $("nav ul.navbar-nav a.nav-link").on("click", function (e) {
-        $("div.navbar-collapse").removeClass("show");
-        if (this.hash !== "") {
-          $("html, body").animate({
-              scrollTop: $(this.hash).offset().top - 66,
+        let windowHash = window.location.hash;
+        if (windowHash !== "") {
+          $("html, body").animate(
+            {
+              scrollTop: $(windowHash).offset().top - 52,
             },
             200
           );
         }
-      });
 
-      $("div#portfolio-nav a").on("click", function (e) {
-        e.preventDefault();
-        $("div#portfolio-nav a").removeClass("active");
-        $(this).addClass("active");
+        $("nav ul.navbar-nav a.nav-link").on("click", function (e) {
+          $("div.navbar-collapse").removeClass("show");
+          if (this.hash !== "") {
+            $("html, body").animate(
+              {
+                scrollTop: $(this.hash).offset().top - 66,
+              },
+              200
+            );
+          }
+        });
 
-        let filterCat = $(this).data("filter");
-        if (filterCat === "all") {
-          $(".portfolio-item").fadeIn(1200).show();
-        } else {
+        $("div#portfolio-nav a").on("click", function (e) {
+          e.preventDefault();
+          $("div#portfolio-nav a").removeClass("active");
+          $(this).addClass("active");
+
           $(".portfolio-item")
-            .hide()
-            .fadeOut(1200)
-            .filter(function () {
-              return $(this).data("cat") === filterCat;
-            })
-            .fadeIn(1200);
-        }
-      });
-    });
-  </script>
-</body>
+            .removeClass("animate__zoomIn")
+            .addClass("animate__zoomOut")
+            .hide();
 
+          let filterCat = $(this).data("filter");
+
+          if (filterCat === "all") {
+            $(".portfolio-item")
+              .removeClass("animate__zoomOut")
+              .show()
+              .addClass("animate__zoomIn");
+          } else {
+            $(".portfolio-item")
+              .filter(function () {
+                return $(this).data("cat") === filterCat;
+              })
+              .removeClass("animate__zoomOut")
+              .show()
+              .addClass("animate__zoomIn");
+          }
+        });
+
+        $(window).scroll(function (e) {
+          if (
+            $(this).scrollTop() >
+            $("#info-client").offset().top - $(this).height() + 30
+          ) {
+            $("#info-client").removeClass("animate__fadeOutDown");
+            $("#info-client").addClass("animate__fadeInUp");
+          } else if (
+            $(this).scrollTop() <
+            $("#info-client").offset().top - $(this).height() + 30
+          ) {
+            $("#info-client").removeClass("animate__fadeInUp");
+            $("#info-client").addClass("animate__fadeOutDown");
+          }
+        });
+      });
+    </script>
+  </body>
 </html>

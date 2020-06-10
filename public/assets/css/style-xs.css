@@ -4,6 +4,7 @@ html {
 
 body {
   background-color: #f5f9ff;
+  overflow-x: hidden;
 }
 
 h1,
@@ -180,9 +181,9 @@ section#portfolio div.portfolio-item {
   overflow: hidden;
 }
 
-section#portfolio div.portfolio-item:hover {
+/* section#portfolio div.portfolio-item:hover {
   transform: scale(1.15);
-}
+} */
 
 section#portfolio div.portfolio-item div.portfolio-image {
   overflow: hidden;
