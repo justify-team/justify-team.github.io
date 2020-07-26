@@ -67,6 +67,18 @@ $(document).ready(function () {
     }
   });
 
+  $("#btn-send-mail").click(function (e) {
+    e.preventDefault();
+
+    const name = $("input#name").val();
+    const email = $("input#email").val();
+    const body = $("textarea#message").val();
+
+    window.open(
+      `mailto:tanya.justify@gmail.com?subject=${name} (${email})&body=${body}`
+    );
+  });
+
   const showModalDetail = (portfolio) => {
     const images = portfolio.images.map(
       (image, index) => `
