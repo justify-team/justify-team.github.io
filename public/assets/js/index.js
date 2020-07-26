@@ -71,12 +71,9 @@ $(document).ready(function () {
     e.preventDefault();
 
     const name = $("input#name").val();
-    const email = $("input#email").val();
     const body = $("textarea#message").val();
 
-    window.open(
-      `mailto:tanya.justify@gmail.com?subject=${name} (${email})&body=${body}`
-    );
+    window.open(`mailto:tanya.justify@gmail.com?subject=${name}&body=${body}`);
   });
 
   const showModalDetail = (portfolio) => {
