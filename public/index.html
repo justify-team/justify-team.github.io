@@ -12,6 +12,10 @@
       name="description"
       content="Justify merupakan sebuah startup penyedia jasa pembuatan aplikasi (software house) berbasis web dan mobile."
     />
+    <meta
+      name="keywords"
+      content="Justify, Team, software house, jasa pembuatan website, jasa pembuatan aplikasi, websites, mobile apps"
+    />
 
     <!-- Bootstrap CSS -->
     <link
@@ -27,6 +31,11 @@
       href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
       integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
       crossorigin="anonymous"
+    />
+    <link
+      rel="shortcut icon"
+      href="./assets/images/logo-no-text-transparent.png"
+      type="image/x-icon"
     />
     <link rel="stylesheet" href="assets/css/materialicons.css" />
     <link rel="stylesheet" href="assets/css/style-xs.css" />
@@ -142,7 +151,7 @@
             <div class="col-6 col-md-4">
               <div class="row">
                 <div class="col-12 col-md-6 text-md-right">
-                  <b>7</b>
+                  <b id="total-clients">0</b>
                 </div>
                 <div class="col-12 col-md-6 text-md-left">
                   <span>Clients</span>
@@ -152,7 +161,7 @@
             <div class="col-6 col-md-4">
               <div class="row">
                 <div class="col-12 col-md-6 text-md-right">
-                  <b>12</b>
+                  <b id="total-websites">0</b>
                 </div>
                 <div class="col-12 col-md-6 text-md-left">
                   <span>Websites</span>
@@ -162,7 +171,7 @@
             <div class="col-6 col-md-4 mx-auto">
               <div class="row">
                 <div class="col-12 col-md-6 text-md-right">
-                  <b>5</b>
+                  <b id="total-mobile-apps">0</b>
                 </div>
                 <div class="col-12 col-md-6 text-md-left">
                   <span>Mobile Apps</span>
@@ -346,13 +355,17 @@
       <div
         class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-xl"
       >
-        <div class="modal-content">
-          <div class="modal-header">
+        <div class="modal-content position-relative">
+          <div
+            class="modal-header border-0 position-absolute pt-2 pb-0"
+            style="top: 0; right: 0; z-index: 9;"
+          >
             <button
               type="button"
-              class="close"
+              class="close bg-white"
               data-dismiss="modal"
               aria-label="Close"
+              style="opacity: 1; border-bottom-left-radius: 50rem;"
             >
               <span aria-hidden="true">&times;</span>
             </button>

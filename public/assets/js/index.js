@@ -108,10 +108,26 @@ $(document).ready(function () {
     $("#modal-detail").modal();
   };
 
+  fetch(
+    "https://my-json-server.typicode.com/justify-team/portfolio/information"
+  )
+    .then((res) => res.json())
+    .then((data) => {
+      $("#total-clients").text(data.total_client);
+    });
+
   fetch("https://my-json-server.typicode.com/justify-team/portfolio/portfolios")
     .then((res) => res.json())
     .then((data) => {
       let portfolioHTML = "";
+      const totalWeb = data.filter((portfolio) => portfolio.category === "web")
+        .length;
+      const totalMobileApp = data.filter(
+        (portfolio) => portfolio.category === "mobile"
+      ).length;
+
+      $("#total-websites").text(totalWeb);
+      $("#total-mobile-apps").text(totalMobileApp);
 
       data.map((portfolio, index) => {
         portfolioHTML = `
